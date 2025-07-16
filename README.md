@@ -1,4 +1,6 @@
-# Giám sát hiệu suất Server Linux/Windows về thông số : RAM, CPU, DISK
+# Giám sát hiệu suất Server Linux/Windows 
+
+![alt](img/logo.png)
 # Tóm tắt công việc:
 * Cài đặt Zabbix trên Ubuntu Server
 * Cài đặt Zabbix Agent trên 2 nền tảng CentOS 7 và Windows Server 2012
