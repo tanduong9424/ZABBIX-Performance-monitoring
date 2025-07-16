@@ -298,9 +298,13 @@ Sau khi tạo file
 ![alt text](img/hinh51.png)
 Xuất hiện thông báo trên Dashboards:
 ![alt text](img/hinh52.png)
+
 Xuất hiện thông báo trên Email:
+
 ![alt text](img/hinh53.png)
 
 Khi xóa đi file kích thước lớn để test ổ đĩa, Zabbix gửi tiếp Email báo khắc phục được sự cố.
 
 ![alt text](img/hinh54.png)
+
+Đến đây đề tài tìm hiểu các cấu hình cơ bản trong Zabbix đã hoàn thành, trong tương lai có thể sẽ có cập nhật để thành thạo hơn về công cụ này. Cảm ơn bạn đọc đã giành thời gian quan tâm
