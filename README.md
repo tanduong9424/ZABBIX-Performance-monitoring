@@ -115,6 +115,7 @@ Trên Windows Server ta tiến hành truy cập và trình duyệt, vào trang c
 Tương tự như ở CentOS ta sẽ cấu hình Hostname, Server và ServerActive nhưng thay vì bằng dòng lệnh, ta cấu hình trực tiếp trong quá trình cài đặt luôn, như hình sau:
 
 ![alt](img/hinh5.png)
+
 ✍️ Ta tiếp tục Next và quá trình cài đặt cứ tiếp tục và ta đã hoàn thành cấu hình Zabbix Agent trên Windows Server.
 ## 2.	Bắt đầu add host Windows Server 2012 và CentOS 7.
 ### 2.1.	Thực hiện trên Windows Server 2012
@@ -125,10 +126,12 @@ Ta chọn Operating systems và chọn mục Windows by Zabbix agent. Đồng th
 ![alt](img/hinh7.png)
 
 Kế tiếp ở phần Interfaces, chọn Agent. Bước này ta sẽ tiến hành nhập IP của Windows Server, tuy nhiên trước đó ta cần biết IP của nó là gì.
+
 ![alt](img/hinh8.png)
 
 Sau khi có được IP ta tiến cấu hình interfaces
 ![alt](img/hinh9.png)
+
 Sau khi hoàn thành các bước trên, host sẽ hiển thị và mất một lúc, mục **Availability** mới chuyển sang **xanh lục**, nghĩa là kết nối với Zabbix Agent trên Windows Server thành công, tuy nhiên nếu nó chuyển sang **đỏ**, cần phải kiểm tra lại cấu hình hoặc tường lửa để đảm bảo kết nối thành công.
 ![alt](img/hinh10.png)
 
@@ -136,8 +139,10 @@ Sau khi hoàn thành các bước trên, host sẽ hiển thị và mất một 
 Làm tương tự trên Windows, với các thông số như sau:
 ![alt](img/hinh11.png)
 ![alt](img/hinh12.png)
+
 Và đây là kết quả sau khi thêm thành công 2 host.
 ![alt](img/hinh13.png)
+
 ## 3.	Cấu hình thông báo Email.
 Ta tiến hành cấu hình Media types cho Email như sau:
 ![alt](img/hinh14.png)
@@ -152,7 +157,9 @@ Mục **Connection sercurity** là mã hóa kết nối từ Server Email vs Zab
 Mục **Authentication** sẽ chuyển sang xác thực bằng Username là tài khoản gmail đã được chọn để nhận thông báo và mật khẩu sẽ là mật khẩu ứng dụng của Gmail được lấy thông qua trang [App Password](https://myaccount.google.com/apppasswords).
 
 Sau khi hoàn tất các cấu hình trên ta chọn **Update** và **Enabled** (nếu bị Disabled) và chọn **test** để kiểm tra cấu hình đúng hay chưa.
+
 ![alt](img/hinh15.png)
+
 Để nhận được thông báo ta cần truy cập vào email được chọn ở cấu hình trên, tiến hành vào cài đặt, sang mục **Chuyển tiếp và POP/IMAP** và **bật IMAP**.
 ![alt](img/hinh16.png)
 
@@ -176,6 +183,7 @@ Tiến hành **Insert**, ở các mục còn lại của trigger như điều ki
 
  Kết quả sau khi cấu hình trigger sẽ có các thông số như sau:
 ![alt](img/hinh19.png)
+
  Và cuối cùng là **Update** và **Enabled** trigger (nếu bị disabled)
 
  ## 1.2.	Cấu hình điều kiện Trigger về CPU
@@ -255,7 +263,9 @@ Thông báo trên Dashboards Zabbix.
 ![alt text](img/hinh43.png)
 Thông báo trên Email. 
 ![alt text](img/hinh44.png)
+
 Sau khi xóa file 45GB đã được tạo thì Zabbix gửi một Email báo vấn đề ổ đĩa đã được giải quyết.
+
 ![alt text](img/hinh45.png)
 
 # 2.	Kết quả trên CentOS.
@@ -288,5 +298,7 @@ Xuất hiện thông báo trên Dashboards:
 ![alt text](img/hinh52.png)
 Xuất hiện thông báo trên Email:
 ![alt text](img/hinh53.png)
+
 Khi xóa đi file kích thước lớn để test ổ đĩa, Zabbix gửi tiếp Email báo khắc phục được sự cố.
+
 ![alt text](img/hinh54.png)
