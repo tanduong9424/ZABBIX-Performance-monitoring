@@ -296,7 +296,9 @@ Sau khi tạo file
 ![alt text](img/hinh51.png)
 Xuất hiện thông báo trên Dashboards:
 ![alt text](img/hinh52.png)
+
 Xuất hiện thông báo trên Email:
+
 ![alt text](img/hinh53.png)
 
 Khi xóa đi file kích thước lớn để test ổ đĩa, Zabbix gửi tiếp Email báo khắc phục được sự cố.
